@@ -1,0 +1,98 @@
+/* Body with dark blue to light blue gradient */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364); /* Dark to light blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Stopwatch card */
+.stopwatch-container {
+  background: #ffffffee;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Title */
+.stopwatch-container h1 {
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Timer Display */
+#display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0051ff;
+  margin-bottom: 25px;
+  letter-spacing: 1.5px;
+}
+
+/* Buttons container */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Common button styles */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Unique colors for each button */
+#startBtn {
+  background: #28a745; /* Green */
+}
+
+#pauseBtn {
+  background: #ffc107; /* Yellow */
+  color: black;
+}
+
+#resetBtn {
+  background: #dc3545; /* Red */
+}
+
+#lapBtn {
+  background: #17a2b8; /* Teal */
+}
+
+/* Lap entries */
+#laps {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#laps li {
+  background-color: #e3f2fd;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-left: 5px solid #007bff;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #333;
+}
